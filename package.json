@@ -1,0 +1,34 @@
+{
+  "name": "label-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for labeling PRs.",
+  "main": "index.js",
+  "scripts": {
+    "build": "ncc build index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tefnet/label-action.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "github actions",
+    "pull request",
+    "PR"
+  ],
+  "author": "Tomasz Jezierski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tefnet/label-action/issues"
+  },
+  "homepage": "https://github.com/Tefnet/label-action",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.4"
+  }
+}

@@ -1,0 +1,25 @@
+name: 'Label Action'
+description: 'Adds/removes pull requests label'
+branding:
+  icon: 'edit'  
+  color: 'yellow'
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: true
+    default: ''
+  label:
+    description: 'Label to add/remove'
+    required: true
+    default: ''
+  type:
+    description: 'add or remove'
+    required: true
+    default: ''
+  state:
+    description: 'PR state'
+    required: false
+    default: 'open'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
